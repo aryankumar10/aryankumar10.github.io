@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Kumar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">My Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certifications" class="nav-link">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Aryan Kumar</span>
+                </h1>
+                <h2 class="hero-subtitle">Computer Science Graduate Student & Software Developer</h2>
+                <p class="hero-description">
+                    Passionate about building innovative solutions using Python, Machine Learning, and Web Development. Currently pursuing MS in Computer Science at San José State University.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Know My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <!-- <i class="fas fa-user"></i> -->
+                    <img src="images/profile.jpeg" alt="Aryan Kumar" class="profile-img">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a Computer Science graduate student at San José State University with a strong foundation in software development and data science. 
+                        With experience as an Associate Consultant at Datacurate Technologies, I've worked on building scalable web applications and data management systems.
+                    </p>
+                    <p>
+                        My expertise spans Python development, Machine Learning, and backend development. I enjoy solving complex problems 
+                        and creating innovative solutions that make a real impact. When I'm not coding, you can find me exploring new technologies 
+                        or working on personal projects.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>2+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Certifications</p>
+                        </div>
+                        <div class="stat">
+                            <h2>3.49</h2>
+                            <p>Undergraduate GPA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Timeline Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Career Timeline</h2>
+            <div class="timeline-container">
+                <div class="timeline-years">
+                    <div class="year-marker active" data-year="2025" onclick="showYear(2025)">
+                        <span class="year-number">2025</span>
+                        <div class="year-line"></div>
+                    </div>
+                    <div class="year-marker" data-year="2023" onclick="showYear(2023)">
+                        <span class="year-number">2023</span>
+                        <div class="year-line"></div>
+                    </div>
+                    <div class="year-marker" data-year="2019" onclick="showYear(2019)">
+                        <span class="year-number">2019</span>
+                        <div class="year-line"></div>
+                    </div>
+                    <div class="year-marker" data-year="2018" onclick="showYear(2018)">
+                        <span class="year-number">2018</span>
+                        <div class="year-line"></div>
+                    </div>
+                    <div class="year-marker" data-year="2016" onclick="showYear(2016)">
+                        <span class="year-number">2016</span>
+                        <div class="year-line"></div>
+                    </div>
+                </div>
+                
+                <div class="timeline-content">
+                    <div class="education-card active" data-year="2025">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-date">2025 - 2027</div>
+                            <h3>Master of Science, Computer Science</h3>
+                            <h4>San José State University, California, United States</h4>
+                            <p>Currently pursuing advanced studies in Computer Science with focus on Machine Learning and Database Management.</p>
+                            <div class="card-tags">
+                                <span class="tag">Machine Learning</span>
+                                <span class="tag">Database Management</span>
+                                <span class="tag">Advanced Algorithms</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-card active" data-year="2023">
+                        <div class="card-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-date">2023 - 2025</div>
+                            <h3>Associate Consultant, Datacurate Technologies</h3>
+                            <h4>Mumbai, India</h4>
+                            <p>Collaborated within a team to develop an online policy generation platform for an insurance firm using Flask. Contributed to building of key modules and APIs including referral system, payment tagging and premium generation. Optimized system performance by reducing database calls using OOP concepts and restructured schemas to eliminate redundancy.</p>
+                            <p>Developed data marts and management routines using SAS DI Studio, including automated ETL jobs for scheduled DWH refresh, data cleansing, and aggregation processes. Built dashboards and profitability reports for data visualization and monitoring using SAS Viya and EG. Developed customer acquisition websites using the Django framework</p>
+                            <div class="card-tags">
+                                <span class="tag">Flask</span>
+                                <span class="tag">SQL</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">SAS Viya</span>
+                                <span class="tag">SAS EG</span>
+                                <span class="tag">Django</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-card" data-year="2019">
+                        <div class="card-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-date">2019 - 2023</div>
+                            <h3>Bachelor of Technology, Computer Science Engineering</h3>
+                            <h4>Sikkim Manipal University, Sikkim, India</h4>
+                            <p>Completed undergraduate studies with a strong foundation in computer science fundamentals and software development.</p>
+                            <div class="card-tags">
+                                <span class="tag">GPA: 3.49</span>
+                                <span class="tag">Institute Merit cum Means Scholarship</span>
+                                <span class="tag">Software Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-card" data-year="2018">
+                        <div class="card-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-date">2018-2019</div>
+                            <h3>Higher Secondary Education (12th Grade)</h3>
+                            <h4>Ryan International School, Delhi, India</h4>
+                            <p>Completed 12th grade with focus on Science stream including Physics, Chemistry, Mathematics, and Computer Science.</p>
+                            <div class="card-tags">
+                                <span class="tag">GPA: 3.54</span>
+                                <span class="tag">Science Stream</span>
+                                <span class="tag">CBSE Board</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-card" data-year="2016">
+                        <div class="card-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-date">2016-2017</div>
+                            <h3>Secondary Education (10th Grade)</h3>
+                            <h4>Ryan International School, Delhi, India</h4>
+                            <p>Completed 10th grade with excellent academic performance and strong foundation in core subjects.</p>
+                            <div class="card-tags">
+                                <span class="tag">GPA: 3.68</span>
+                                <span class="tag">Academic Excellence</span>
+                                <span class="tag">CBSE Board</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>R</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C/C++</span>
+                        </div>
+                        <!-- <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Frameworks & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Flask</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Django</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Power BI</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>SAS Viya</span>
+                        </div>
+                        <!-- <div class="skill-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>SAS EG</span>
+                        </div> -->
+                        <div class="skill-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>SAS DI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Developer Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-microsoft"></i>
+                            <span>Azure DevOps</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-microsoft"></i>
+                            <span>Microsoft 365</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-robot"></i>
+                            <span>TensorFlow</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications & Training</h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Microsoft Certified: Power Platform Fundamentals</h3>
+                        <p class="cert-issuer">Microsoft</p>
+                        <p class="cert-year">2024</p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-satellite"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Overview of Geocomputation and Geo-web services</h3>
+                        <p class="cert-issuer">IIRS, ISRO</p>
+                        <p class="cert-year">2022</p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Statistics for Data Analysis Using R</h3>
+                        <p class="cert-issuer">Udemy</p>
+                        <p class="cert-year">2022</p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Internet of Things and Machine Learning</h3>
+                        <p class="cert-issuer">Bolt IoT</p>
+                        <p class="cert-year">2022</p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Microsoft Certified: Azure AI Fundamentals</h3>
+                        <p class="cert-issuer">Microsoft</p>
+                        <p class="cert-year">2022</p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Introduction to Tensorflow for AI, ML and DL</h3>
+                        <p class="cert-issuer">Coursera</p>
+                        <p class="cert-year">2021</p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Python For Data Science</h3>
+                        <p class="cert-issuer">NPTEL</p>
+                        <p class="cert-year">2021</p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Machine Learning</h3>
+                        <p class="cert-issuer">Coursera</p>
+                        <p class="cert-year">2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Personal Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-microphone-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Lyrics Generator</h3>
+                        <p>Built an NLP model using Markov Chain concept to generate lyrics from given input words. Dataset acquired from Kaggle with various English artists and their song lyrics across multiple genres.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Markov Chain</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>College Management Web App</h3>
+                        <p>Developed an all-in-one web application for students and faculties with academic functionalities. Handled data extraction, storage, and cleaning from college websites with MongoDB integration.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-broadcast-tower"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Morse Code Communicator</h3>
+                        <p>Built a Python program to convert text into morse code with signals transmitted using Bolt IoT module. Utilized cloud platform for communication between users with real-time messaging capabilities.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Bolt IoT</span>
+                            <span class="tech-tag">Cloud Platform</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Prediction of Credit Card Default</h3>
+                        <p>Created a machine learning model which catches a credit card defaulter based on input features such as yearly debt payments, credit score, net yearly income, etc. Part of American Express Hackathon. Decision Tree was used with accuracy of 97.93%</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Decision Tree</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Prediction of Prescribed Drugs</h3>
+                        <p>Created a machine learning model which predicts the drug required for the patient given the patient's vitals such as BP, Cholesterol level, etc. Logistic Regression was used with accuracy of 93.3%</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Logistic Regression</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-car"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Vehicle Accident Prevention and Safety System</h3>
+                        <p>Designed and implemented a vehicle safety prototype using Arduino Uno, motors, and sensors to enhance accident prevention and passenger safety. Developed the embedded code to calculate distance between the car and surroundings using sensors and automatically apply brakes based on vehicle speed.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C/C++</span>
+                            <span class="tech-tag">Arduino Uno</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out if you'd like to collaborate.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>aryann.kumar2000@gmail.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (872) 234-3058</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>San Jose, CA 95134</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/aryan-kumar-10" class="social-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <!-- <a href="#" class="social-link">
+                            <i class="fab fa-X-twitter"></i>
+                        </a> -->
+                        <a href="mailto:aryann.kumar2000@gmail.com" class="social-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ari.kumar24k" class="social-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Aryan Kumar. All rights reserved.</p>
+                <p>Built with ❤️ and modern web technologies</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
