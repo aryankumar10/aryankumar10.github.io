@@ -806,10 +806,18 @@ section {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-.skill-item i {
+.skill-item i,
+.skill-item img,
+.skill-item svg {
     font-size: 2rem;
     margin-bottom: 0.5rem;
     color: var(--accent);
+}
+
+.skill-item img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
 }
 
 .skill-item span {
