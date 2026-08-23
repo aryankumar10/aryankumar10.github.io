@@ -77,7 +77,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Add fade-in class to elements and observe them
 document.addEventListener('DOMContentLoaded', () => {
-    const elementsToAnimate = document.querySelectorAll('.project-card, .skill-category, .stat, .about-text, .contact-info');
+    const elementsToAnimate = document.querySelectorAll('.project-card, .skill-category, .stat, .about-text, .contact-info, .timeline-item');
     elementsToAnimate.forEach(el => {
         el.classList.add('fade-in');
         observer.observe(el);
@@ -326,38 +326,7 @@ function throttle(func, wait) {
 }
 
 
-// Education Timeline Functionality
-function showYear(year) {
-    // Remove active class from all year markers
-    const yearMarkers = document.querySelectorAll('.year-marker');
-    yearMarkers.forEach(marker => {
-        marker.classList.remove('active');
-    });
-    
-    // Add active class to clicked year marker
-    const activeMarker = document.querySelector(`[data-year="${year}"]`);
-    if (activeMarker) {
-        activeMarker.classList.add('active');
-    }
-    
-    // Hide all education cards
-    const educationCards = document.querySelectorAll('.education-card');
-    educationCards.forEach(card => {
-        card.classList.remove('active');
-    });
-    
-    // Show the education card for the selected year
-    const activeCard = document.querySelector(`.education-card[data-year="${year}"]`);
-    if (activeCard) {
-        activeCard.classList.add('active');
-    }
-}
 
-// Initialize timeline
-document.addEventListener('DOMContentLoaded', () => {
-    // Set initial active year (2025)
-    showYear(2025);
-});
 
 // Apply throttling to scroll events
 const throttledScrollHandler = throttle(() => {
