@@ -563,15 +563,15 @@ section {
 
 .timeline-container {
     max-width: 1050px;
-    margin: 2.5rem auto 0;
+    margin: 1.5rem auto 0;
     position: relative;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
 }
 
 .timeline-line {
     position: absolute;
-    top: 15px;
-    bottom: 15px;
+    top: 10px;
+    bottom: 10px;
     left: 50%;
     width: 4px;
     background: linear-gradient(180deg, var(--accent) 0%, var(--accent-3) 50%, var(--accent-2) 100%);
@@ -584,7 +584,7 @@ section {
 .timeline-item {
     position: relative;
     width: 100%;
-    margin-bottom: 3.5rem;
+    margin-bottom: 1.75rem;
     display: flex;
     align-items: flex-start;
     z-index: 2;
@@ -605,10 +605,10 @@ section {
 .timeline-node {
     position: absolute;
     left: 50%;
-    top: 22px;
+    top: 18px;
     transform: translate(-50%, 0);
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 44px;
     background: linear-gradient(135deg, var(--accent), var(--accent-2));
     border: 4px solid #ffffff;
     border-radius: 50%;
@@ -616,7 +616,7 @@ section {
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     z-index: 3;
     box-shadow: 0 4px 15px rgba(22, 163, 74, 0.35);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -629,12 +629,12 @@ section {
 }
 
 .timeline-card {
-    width: calc(50% - 45px);
+    width: calc(50% - 42px);
     background: #ffffff;
-    padding: 2rem 2.2rem;
-    border-radius: 18px;
+    padding: 1.5rem 1.8rem;
+    border-radius: 16px;
     border: 1px solid #e2e8f0;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.05);
     position: relative;
     transition: all 0.35s ease;
 }
@@ -651,7 +651,7 @@ section {
 .timeline-item.left .timeline-card::after {
     content: '';
     position: absolute;
-    top: 30px;
+    top: 24px;
     right: -10px;
     width: 0;
     height: 0;
@@ -664,7 +664,7 @@ section {
 .timeline-item.right .timeline-card::after {
     content: '';
     position: absolute;
-    top: 30px;
+    top: 24px;
     left: -10px;
     width: 0;
     height: 0;
@@ -686,7 +686,7 @@ section {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-bottom: 0.85rem;
+    margin-bottom: 0.75rem;
 }
 
 .timeline-date {
@@ -695,9 +695,9 @@ section {
     gap: 0.45rem;
     color: var(--accent);
     font-weight: 600;
-    font-size: 0.92rem;
+    font-size: 0.9rem;
     background: #ecfdf5;
-    padding: 0.35rem 0.85rem;
+    padding: 0.3rem 0.8rem;
     border-radius: 30px;
     border: 1px solid rgba(22, 163, 74, 0.2);
 }
@@ -707,7 +707,7 @@ section {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    padding: 0.25rem 0.65rem;
+    padding: 0.2rem 0.6rem;
     border-radius: 6px;
 }
 
@@ -722,18 +722,18 @@ section {
 }
 
 .timeline-title {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: #1e293b;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.35rem;
     line-height: 1.35;
 }
 
 .timeline-subtitle {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     font-weight: 500;
     color: #64748b;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -743,18 +743,18 @@ section {
 
 .timeline-subtitle i {
     color: var(--accent);
-    font-size: 0.9rem;
+    font-size: 0.88rem;
 }
 
 .timeline-desc {
     color: #475569;
-    font-size: 0.95rem;
-    line-height: 1.65;
-    margin-bottom: 0.85rem;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin-bottom: 0.6rem;
 }
 
 .timeline-desc:last-of-type {
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.9rem;
 }
 
 .card-tags {
@@ -1261,10 +1261,10 @@ section {
     .timeline-node {
         left: 24px;
         transform: translate(-50%, 0);
-        width: 40px;
-        height: 40px;
-        font-size: 1rem;
-        top: 18px;
+        width: 38px;
+        height: 38px;
+        font-size: 0.95rem;
+        top: 14px;
     }
 
     .timeline-item:hover .timeline-node {
@@ -1274,19 +1274,20 @@ section {
     .timeline-item.left,
     .timeline-item.right {
         justify-content: flex-start;
-        margin-bottom: 2.5rem;
+        margin-bottom: 1.35rem;
     }
 
     .timeline-item.left .timeline-card,
     .timeline-item.right .timeline-card {
-        width: calc(100% - 56px);
-        margin-left: 56px;
+        width: calc(100% - 52px);
+        margin-left: 52px;
         margin-right: 0;
-        padding: 1.6rem;
+        padding: 1.25rem 1.35rem;
     }
 
     .timeline-item.left .timeline-card::after,
     .timeline-item.right .timeline-card::after {
+        top: 20px;
         left: -10px;
         right: auto;
         border-left: none;
@@ -1381,19 +1382,24 @@ section {
         height: 48px;
     }
 
+    .timeline-item.left,
+    .timeline-item.right {
+        margin-bottom: 1.15rem;
+    }
+
     .timeline-item.left .timeline-card,
     .timeline-item.right .timeline-card {
-        padding: 1.25rem;
+        padding: 1.1rem 1.15rem;
     }
 
     .timeline-title {
-        font-size: 1.15rem;
+        font-size: 1.12rem;
     }
 
     .card-badge-row {
         flex-direction: column;
         align-items: flex-start;
-        gap: 0.4rem;
+        gap: 0.35rem;
     }
 }
 
